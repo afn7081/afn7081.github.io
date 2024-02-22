@@ -1,13 +1,13 @@
 {
   "name": "will-you-date",
-  "homepage": "https://afn7081.github.io/will-you-be-my-date",
+  "homepage": "https://afn7081.github.io/will-you-date",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "GENERATE_SOURCEMAP=false && tsc && vite build",
-    "deploy": "GENERATE_SOURCEMAP=false && vite build",
+    "deploy": "vite build && gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
